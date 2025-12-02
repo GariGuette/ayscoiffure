@@ -1,0 +1,124 @@
+.manage-reservations,
+.manage-blacklist,
+.manage-services,
+.add-reservation,
+.manage-salon {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: var(--primary-color);
+  margin: 2rem 0 1rem 0;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.add-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.add-form h2,
+.blacklist-table h2,
+.services-list h2 {
+  margin-top: 0;
+}
+
+.blacklist-table,
+.services-list {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blacklist-table table,
+.services-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.blacklist-table th,
+.services-list th {
+  background-color: var(--light-bg);
+  padding: 1rem;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.blacklist-table td,
+.services-list td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.blacklist-table tbody tr:hover,
+.services-list tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.hours-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--light-bg);
+  flex-wrap: wrap;
+}
+
+.hours-row label {
+  min-width: 80px;
+  font-weight: bold;
+}
+
+.hours-row input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.hours-row input[type="time"] {
+  width: auto;
+  padding: 0.5rem;
+}
+
+.hours-row span {
+  margin: 0 0.5rem;
+}
+
+.section {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hours-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hours-row input[type="time"] {
+    width: 100%;
+  }
+}

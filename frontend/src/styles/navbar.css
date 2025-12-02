@@ -1,0 +1,8 @@
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
